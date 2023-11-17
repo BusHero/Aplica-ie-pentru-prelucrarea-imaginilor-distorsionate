@@ -288,9 +288,12 @@ class Application(Frame):
         self.windows.after(500, self.display)
         self.pack()
 
-root = Tk()
-root.title("Data labeling")
-print("geometry {}x{}".format(root.winfo_screenwidth(), root.winfo_screenheight()))
-root.geometry("{}x{}".format(root.winfo_screenwidth(), root.winfo_screenheight()))
-app = Application(root)
-app.mainloop()
+
+
+if __name__ == "__main__":
+    root = Tk()
+    root.title("Data labeling")
+    print("geometry {}x{}".format(root.winfo_screenwidth(), root.winfo_screenheight()))
+    root.geometry("{}x{}".format(root.winfo_screenwidth(), root.winfo_screenheight()))
+    app = Application(root)
+    app.mainloop()
